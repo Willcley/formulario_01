@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(0deg, black, darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+        box-shadow: 0 0 120px 8px #ffffff60;
+    }
+    50% {
+        background-position: 100% 50%;
+        box-shadow: 0 0 600px 80px #ffffff60;
+    }
+    100% {
+        background-position: 0% 50%;
+        box-shadow: 0 0 120px 8px #ffffff60;
+    }
+}
+
+form {
+    background-color: #ffffff60;
+    display: flex;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px #00000040,
+    -8px -8px 12px #ffffff40;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 40px;
+}
+
+p {
+    font-family: helvetica;
+}
+
+div {
+    display: flex;
+    margin: 20px 0 12px 0;
+    width: 320px;
+    flex-direction: column;
+    font-size: medium;
+    font-family: helvetica;
+}
+
+input {
+    background-color: #f0f0f060;
+    border: none;
+    margin: 4px 0 16px 0;
+    padding: 0 16px 0 16px;
+    width: 100% - 16px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px inset #00000040,
+    -4px -4px 8px inset #ffffff40;
+}
+
+input:focus {
+    background-color: #ffffff60;
+    box-shadow: 2px 2px 8px inset #00000040,
+    -2px -2px 8px inset #ffffff40;
+}
+
+button {
+    background-color: #0000ffd0;
+    color: #ecf4ff;
+    width: 240px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 12px #00008bd0;
+    font-size: 28px;
+}
+
+button:hover {
+    cursor: pointer;
+    margin-top: 4px;
+    box-shadow: 0 8px #00008bd0;
+}
+
+button:active {
+    margin-top: 10px;
+    box-shadow: 0 2px #00008bd0;
+}
